@@ -1,51 +1,48 @@
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import React from "react";
 
 function Links() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleNavBar = () => {
-    setIsOpen(!isOpen);
+  const scrollToSection = (id) => (e) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const scrollToAboutMe = () => {
-    event.preventDefault();
-    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToSkills = () => {
-    event.preventDefault();
-    document.getElementById("skills").scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToProjects = () => {
-    event.preventDefault();
-    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
-  };
-  const scrollToContact = () => {
-    event.preventDefault();
-    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
-  };
+  const link =
+    "text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors";
+
   return (
-    <>
-      <div className=" md:block flex justify-end hidden">
-        <div className="w-full flex justify-between gap-5 font-normal">
-          <a href="" className="p-3" onClick={scrollToAboutMe}>
-            About
-          </a>
-          <a href="" className="p-3" onClick={scrollToSkills}>
-            Skills
-          </a>
-          <a href="" className="p-3 " onClick={scrollToProjects}>
-            Projects
-          </a>
-          <a
-            href=""
-            className="rounded-full bg-white p-3 font-light text-center"
-            onClick={scrollToContact}
-          >
-            Get in Touch
-          </a>
-        </div>
-      </div>
-    </>
+    <nav className="hidden md:flex items-center gap-2">
+      <a
+        href="#about"
+        onClick={scrollToSection("about")}
+        className={`px-3 py-2 rounded-md ${link} hover:bg-gray-100`}
+      >
+        About
+      </a>
+
+      <a
+        href="#skills"
+        onClick={scrollToSection("skills")}
+        className={`px-3 py-2 rounded-md ${link} hover:bg-gray-100`}
+      >
+        Skills
+      </a>
+
+      <a
+        href="#projects"
+        onClick={scrollToSection("projects")}
+        className={`px-3 py-2 rounded-md ${link} hover:bg-gray-100`}
+      >
+        Projects
+      </a>
+
+      <a
+        href="#contact"
+        onClick={scrollToSection("contact")}
+        className="ml-2 px-4 py-2 rounded-md text-sm font-semibold bg-gray-900 text-white hover:bg-gray-800 transition-colors"
+      >
+        Get in Touch
+      </a>
+    </nav>
   );
 }
 

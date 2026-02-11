@@ -29,7 +29,6 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      <PageViewDisplay slug="homepage" />
     </>
   );
 }

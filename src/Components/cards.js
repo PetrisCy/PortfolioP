@@ -4,6 +4,8 @@ import book2 from "../img/book2.png"
 import work from "../img/work.png"
 import novel from "../img/novel.png";
 import sc from "../img/selfcare.png";
+import pce from "../img/pce.jpeg";
+import dp from "../img/dp.jpeg";
 
 
 export const cards = [
@@ -23,7 +25,7 @@ export const cards = [
     },
     {
         title: "Front-End development",
-        description: 'With basic education, multiple courses and alot of hours smashing the keyboard, I have intermediate knowladge and experience with Front-end and some Back-end frameworks and libraries. That include : React.js, Next.js, HTML/CS and more.',
+        description: 'With basic education, multiple courses and alot of hours smashing the keyboard, I have intermediate knowledge and experience with Front-end and some Back-end frameworks and libraries. That include : React.js, Next.js, HTML/CSS and more.',
         image: smashPic,
         color: '#e5dcea'
         // color: '#C2491D'
@@ -37,7 +39,7 @@ export const cards = [
 export const skillz = [
     {
         skill: 'HTML/CSS',
-        lvl: 'Advanced'
+        lvl: 'Intermediate'
     },
     {
         skill: 'JavaScript',
@@ -64,7 +66,7 @@ export const skillz = [
         lvl: 'Basics'
     },
     {
-        skill: 'IT Technitian ',
+        skill: 'IT Technician ',
         lvl: 'Advanced'
     },
     {
@@ -76,6 +78,13 @@ export const skillz = [
 
 export const ProjectsImport = [
     {
+        title: "Practice Cyprus Exams",
+        img: pce,
+        description: "Practice Cyprus Exams is a project that I created to help students prepare for their Goverment Exams. The site is being used daily by students and has a large question bank with multiple choice questions, answers and explenations. ",
+        tools: ["Next.js", "Tailwindcss", "NeonDB", "Prisma",],
+        link: "https://practicecyprusexams.com/",
+    },
+    {
         title: "The Novel Yard",
         img: novel,
         description:
@@ -83,19 +92,21 @@ export const ProjectsImport = [
         tools: ["HTML", "CSS", "Javascript"],
         link: "https://thenovelyard.com.cy/",
     },
+
     {
         title: "Self Care - SPA",
         img: sc,
         description:
-            "Self Care is a fully responsive, Single Page Application with aim on showcasing an artistic style e-commerce front-end design",
-        tools: ["React.js", "CSS"],
+            "Self Care is a fully responsive, Single Page Application aimed at showcasing an artistic style e-commerce front-end design",
+        tools: ["React.js / Vite", "CSS"],
         link: "https://petriscy.github.io/SelfCareProjectLive/",
+    }, {
+        title: "Move-Digital",
+        img: dp,
+        description:
+            "Move-Digital is a fully responsive SPA for a local company. The website is build to showcase a large variety of services and products the company provides.",
+        tools: ["React.js / Vite", "CSS"],
+        link: "https://www.move-dp.com/",
     },
-    {
-        title: "In Progress/Uploading Soon",
-        img: novel,
-        description: "In Progress",
-        tools: ["React.js", "Tailwindcss"],
-        link: "_",
-    },
+
 ];

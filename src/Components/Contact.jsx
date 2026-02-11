@@ -70,7 +70,7 @@ function Contact() {
           </span>
           <button
             type="submit"
-            className="bg-gradient-to-r from-red-200 to-red-300 py-3 px-4 rounded-md hover:text-black mt-10 text-m lg:text-xl text-center block w-1/3 lg:w-1/5"
+            className="bg-gray-900 text-white py-3 px-6 rounded-md hover:bg-gray-800  mt-10 text-m lg:text-xl text-center block w-1/3 lg:w-1/5"
           >
             Submit
           </button>
